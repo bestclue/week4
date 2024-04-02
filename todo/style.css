@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* @font-face {
+    font-family: 'MyLocalFont';
+    src: url('fonts/MyLocalFont.woff2') format('woff2'),
+         url('fonts/MyLocalFont.woff') format('woff'),
+         url('fonts/MyLocalFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* form 내부의 요소들이 상하로 쌓이게 하고 각 요소를 가운데 정렬합니다. */
+  }
+
+form input,
+form button {
+  padding: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #0088cc;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005f8a;
+}
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+  background-color: #f9f9f9;
+}
+
+li button {
+  padding: 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+li div.title {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #ccc;
+}
